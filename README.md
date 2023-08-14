@@ -12,7 +12,7 @@ Paper: [SSE-PT: Sequential Recommendation Via Personalized Transformer (acm.org)
 
 The results of this repo are reproduced on a GTX 1070. It takes about 10 minutes for the model to achieve the best results on MovieLens-1M, at about epoch 210.
 
-This results is achieved by only setting the probability of replacing user embeddings to 0.1(with a probability of 0.1 to replace the user embeddings), with no replacement for item embeddings.
+This results is achieved by only setting the probability of replacing user embeddings to 0.1, with no replacement for item embeddings.
 
 ![result](images/result.png)
 
