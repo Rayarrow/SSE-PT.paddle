@@ -1,10 +1,10 @@
 # SSE-PT.paddle
-A PaddlePaddle implementation of Sequential Recommendation Via Personalized Transformer, an updated version of [SASRec model](https://arxiv.org/pdf/1808.09781.pdf ), with 
+A PaddlePaddle implementation of Sequential Recommendation Via Personalized Transformer, an updated version of [SASRec model](https://arxiv.org/pdf/1808.09781.pdf ), with the following 2 updates:
 
-1. Stochastic Shared Embeddings layer added.
+1. Stochastic Shared Embeddings layers are added.
 2. item embeddings are concatenated with their corresponding user embeddings.
 
-This repo is basically an update of [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ), and the README.md is also an modification of the original one.
+This repo is basically an update of [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ), and the README.md is also a modification of the original one.
 
 Paper: [SSE-PT: Sequential Recommendation Via Personalized Transformer (acm.org)](https://dl.acm.org/doi/pdf/10.1145/3383313.3412258)
 
