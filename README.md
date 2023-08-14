@@ -55,9 +55,9 @@ bash eval.sh
 
 ## Details
 
-1. [inherited from as implemented in [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ).] The original SASRec places `LayerNorm` before `MultiHeadAttention`, while it's moved after `MultiHeadAttention` in this repo. This arrangement achieved better results, and is accordance with the original `Transformer` model.
-2. [inherited from as implemented in [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ).] The original SASRec uses optimizer `Adam`, while this repo uses `AdamW` and achievement better results.
-3. In this repo, The SSE replacement probability is defined slightly different from the original paper. The original SSE-PT take `p_u` as the probability of keeping the original embeddings, while this repo take it as the probability of replacing them with others, just like dropout rate. i.e., `p_u'=1-p_u`,  `p_u'`is the SSE replacement probability in this repo while `p_u` is that in the original paper.
+1. [inherited from [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ).] The original SASRec places `LayerNorm` before `MultiHeadAttention`, while it's moved after `MultiHeadAttention` in this repo. This arrangement achieved better results, and is accordance with the original `Transformer` model.
+2. [inherited from [SASRec.paddle](https://github.com/paddorch/SASRec.paddle ).] The original SASRec uses optimizer `Adam`, while this repo uses `AdamW` and achievement better results.
+3. In this repo, The SSE replacement probability is defined slightly different from the original paper. The original SSE-PT take `p_u` as the probability of **keeping** the original embeddings, while this repo take it as the probability of **replacing** them with others, just like dropout rate. i.e., `p_u'=1-p_u`,  `p_u'`is the SSE replacement probability in this repo while `p_u` is the probability of keeping as defined in the original paper.
 
 ## References
 
